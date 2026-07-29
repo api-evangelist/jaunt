@@ -1,7 +1,27 @@
 aid: jaunt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jaunt.png
 name: Jaunt *
-description: 'Jaunt * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Jaunt (Jaunt VR, later Jaunt XR) was a cinematic virtual-reality and immersive-media
+  technology company founded in 2013 and based in Santa Clara, California. It built end-to-end tools
+  for capturing, stitching, streaming, and viewing 360-degree cinematic VR, including the Jaunt ONE
+  professional camera and a cloud rendering pipeline, before pivoting toward volumetric AR/XR in 2018.
+  Backed by GV (Google Ventures) among other investors, the company wound down its XR business and sold
+  its underlying technology assets to Verizon in late 2019. This profile was surfaced as a GV portfolio
+  company; the company is now defunct and its domains (jaunt.us, jauntxr.com) are parked/for-sale or
+  reassigned, so there is no live developer or API surface to enrich.'
+x-status: defunct
+x-status-note: 'XR business wound down; technology assets sold to Verizon in late 2019. Domains parked/for-sale (jaunt.us on GoDaddy) or reassigned to an unrelated party (jauntxr.com). No live developer/API surface as of 2026-07-19.'
 url: https://raw.githubusercontent.com/api-evangelist/jaunt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +31,24 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Virtual Reality
+- Immersive Media
+- Augmented Reality
+- Video
+- Media Technology
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
